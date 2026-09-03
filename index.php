@@ -7,14 +7,17 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <!-- Top Stats Badges -->
         <div class="flex flex-wrap gap-3 mb-5">
-            <div class="bg-white/95 backdrop-blur px-4 py-2 rounded-md flex items-center font-semibold text-sm shadow-sm border border-white/20">
-                <span class="text-base mr-2">🏠</span> Home Visits
+            <div class="bg-white/95 backdrop-blur px-4 py-2 rounded-full flex items-center font-bold text-gray-800 text-sm shadow-sm border border-white/50">
+                Home Visits <span class="ml-1 text-lg">🥇</span>
             </div>
-            <div class="bg-white/95 backdrop-blur px-4 py-2 rounded-md flex items-center font-semibold text-sm shadow-sm border border-white/20">
-                <span class="text-base mr-2">🥇</span> Certified 50+ Therapists
+            <div class="bg-white/95 backdrop-blur px-4 py-2 rounded-full flex items-center font-bold text-gray-800 text-sm shadow-sm border border-white/50">
+                Certified 40+ Therapists <span class="ml-1 text-lg">⭐</span>
             </div>
-            <div class="bg-white/95 backdrop-blur px-4 py-2 rounded-md flex items-center font-semibold text-sm shadow-sm border border-white/20">
-                <span class="text-base mr-2">⭐</span> 2000+ Patients
+            <div class="bg-white/95 backdrop-blur px-4 py-2 rounded-full flex items-center font-bold text-gray-800 text-sm shadow-sm border border-white/50">
+                3000+ Patients <span class="ml-1 text-lg">❤️</span>
+            </div>
+            <div class="bg-brand-500 backdrop-blur px-4 py-2 rounded-full flex items-center font-bold text-white text-sm shadow-sm border border-brand-400">
+                <i class="fas fa-phone-alt mr-2"></i> +91 7987397821
             </div>
         </div>
 
@@ -98,10 +101,10 @@
                         <span class="text-sm font-bold text-brand-800">Book Session Now</span>
                     </div>
 
-                    <form action="#" method="POST" class="space-y-3">
+                    <form id="enquiry-form" class="space-y-3">
                         <div>
                             <label class="block text-[11px] font-semibold text-gray-700 mb-1">Full Name <span class="text-red-500">*</span></label>
-                            <input type="text" placeholder="Enter your name" class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:ring-1 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                            <input id="wa-name" type="text" placeholder="Enter your name" class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:ring-1 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
                         </div>
                         
                         <div>
@@ -110,28 +113,28 @@
                                 <span class="inline-flex items-center px-3 rounded-l border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm font-medium">
                                     +91
                                 </span>
-                                <input type="tel" placeholder="10 digit mobile number" class="flex-1 border border-gray-300 rounded-r px-3 py-2 text-sm focus:ring-1 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                                <input id="wa-phone" type="tel" placeholder="10 digit mobile number" class="flex-1 border border-gray-300 rounded-r px-3 py-2 text-sm focus:ring-1 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
                             </div>
                         </div>
 
                         <div>
                             <label class="block text-[11px] font-semibold text-gray-700 mb-1">Address (Optional)</label>
-                            <input type="text" placeholder="Enter your address for home visit" class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:ring-1 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                            <input id="wa-address" type="text" placeholder="Enter your address for home visit" class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:ring-1 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
                         </div>
 
                         <div>
                             <label class="block text-[11px] font-semibold text-gray-700 mb-1">Issue (Optional)</label>
-                            <select class="w-full border border-gray-300 rounded px-3 py-2 text-sm text-gray-500 focus:ring-1 focus:ring-brand-500 focus:border-brand-500 outline-none bg-white transition">
-                                <option>Select your issue (optional)</option>
-                                <option>Back Pain</option>
-                                <option>Neck Pain</option>
-                                <option>Joint Pain</option>
-                                <option>Post Surgery</option>
-                                <option>Other</option>
+                            <select id="wa-issue" class="w-full border border-gray-300 rounded px-3 py-2 text-sm text-gray-500 focus:ring-1 focus:ring-brand-500 focus:border-brand-500 outline-none bg-white transition">
+                                <option value="">Select your issue (optional)</option>
+                                <option value="Back Pain">Back Pain</option>
+                                <option value="Neck Pain">Neck Pain</option>
+                                <option value="Joint Pain">Joint Pain</option>
+                                <option value="Post Surgery">Post Surgery</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
 
-                        <button type="button" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-2.5 px-4 rounded transition flex items-center justify-center gap-2 mt-2 shadow-sm">
+                        <button type="button" onclick="submitToWhatsApp()" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-2.5 px-4 rounded transition flex items-center justify-center gap-2 mt-2 shadow-sm">
                             Enquire/Book Now <i class="fas fa-arrow-right text-[10px]"></i>
                         </button>
                         
@@ -147,60 +150,57 @@
     </div>
 </section>
 
-<!-- Section 5: Our Expert Team -->
-<section class="py-16 bg-gray-50 border-t border-gray-100">
+<!-- Section 5: Why Home Physiotherapy? -->
+<section class="py-10 md:py-16 bg-gray-50 border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Meet Our Experts</h2>
-            <p class="text-gray-500 text-sm">Highly qualified and background-verified physiotherapists dedicated to your care.</p>
+            <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-3 tracking-tight">Why Choose Home Physiotherapy?</h2>
+            <div class="w-16 h-1 bg-brand-500 mx-auto rounded-full mb-4"></div>
+            <p class="text-gray-500 text-sm md:text-base font-medium">Experience faster recovery with professional care delivered directly to your doorstep.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <!-- Team Member 1 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 text-center hover:shadow-md transition">
-                <div class="h-40 bg-brand-100 flex items-center justify-center">
-                    <i class="fas fa-user-md text-5xl text-brand-500"></i>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Benefit 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-5 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                    <i class="fas fa-car-side text-2xl"></i>
                 </div>
-                <div class="p-5">
-                    <h4 class="font-bold text-gray-900">Dr. Rahul Sharma</h4>
-                    <p class="text-xs text-brand-600 font-medium mb-2">Senior Physiotherapist (MPT)</p>
-                    <p class="text-xs text-gray-500">8+ Years Exp • Orthopedic Specialist</p>
-                </div>
+                <h4 class="font-bold text-gray-900 mb-2 text-lg">Zero Travel Time</h4>
+                <p class="text-sm text-gray-600 leading-relaxed">Skip the traffic and waiting rooms. We bring the clinic to you, saving you valuable time and physical strain.</p>
             </div>
-            <!-- Team Member 2 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 text-center hover:shadow-md transition">
-                <div class="h-40 bg-brand-100 flex items-center justify-center">
-                    <i class="fas fa-user-nurse text-5xl text-brand-500"></i>
+            
+            <!-- Benefit 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-14 h-14 bg-brand-50 text-brand-600 rounded-full flex items-center justify-center mb-5 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                    <i class="fas fa-home text-2xl"></i>
                 </div>
-                <div class="p-5">
-                    <h4 class="font-bold text-gray-900">Dr. Priya Singh</h4>
-                    <p class="text-xs text-brand-600 font-medium mb-2">Neuro-Physiotherapist (MPT)</p>
-                    <p class="text-xs text-gray-500">6+ Years Exp • Stroke Rehab</p>
-                </div>
+                <h4 class="font-bold text-gray-900 mb-2 text-lg">Heal in Comfort</h4>
+                <p class="text-sm text-gray-600 leading-relaxed">Recovering in a familiar environment reduces stress and allows you to practice exercises exactly where you live.</p>
             </div>
-            <!-- Team Member 3 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 text-center hover:shadow-md transition">
-                <div class="h-40 bg-brand-100 flex items-center justify-center">
-                    <i class="fas fa-user-md text-5xl text-brand-500"></i>
+            
+            <!-- Benefit 3 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center mb-5 group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300">
+                    <i class="fas fa-user-md text-2xl"></i>
                 </div>
-                <div class="p-5">
-                    <h4 class="font-bold text-gray-900">Dr. Amit Patel</h4>
-                    <p class="text-xs text-brand-600 font-medium mb-2">Sports Injury Expert (BPT)</p>
-                    <p class="text-xs text-gray-500">5+ Years Exp • Kinesiology</p>
-                </div>
+                <h4 class="font-bold text-gray-900 mb-2 text-lg">1-on-1 Undivided Care</h4>
+                <p class="text-sm text-gray-600 leading-relaxed">Unlike crowded clinics, our therapist is 100% focused solely on your recovery for the entire duration of the session.</p>
             </div>
-            <!-- Join Team -->
-            <div class="bg-brand-600 rounded-xl overflow-hidden shadow-sm text-center flex flex-col justify-center items-center p-6 text-white">
-                <h4 class="font-bold text-lg mb-2">50+ Certified Therapists</h4>
-                <p class="text-xs text-brand-100 mb-4">All our professionals are rigorously vetted and hold active medical licenses.</p>
-                <a href="about.php" class="bg-white text-brand-600 text-xs font-bold py-2 px-4 rounded-full shadow hover:bg-gray-50 transition">Read More</a>
+            
+            <!-- Benefit 4 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-14 h-14 bg-orange-50 text-orange-600 rounded-full flex items-center justify-center mb-5 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
+                    <i class="fas fa-users text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-gray-900 mb-2 text-lg">Family Involvement</h4>
+                <p class="text-sm text-gray-600 leading-relaxed">Your family members can learn how to safely assist you with daily movements and track your healing progress.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Section 6: FAQ -->
-<section class="py-16 bg-white">
+<section class="py-10 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-10">
             <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Frequently Asked Questions</h2>
@@ -209,30 +209,30 @@
 
         <div class="space-y-4">
             <!-- FAQ 1 -->
-            <div class="border border-gray-200 rounded-lg p-5 hover:border-brand-500 transition cursor-pointer">
+            <div class="faq-item border border-gray-200 rounded-lg p-5 hover:border-brand-500 transition cursor-pointer" onclick="toggleFaq(this)">
                 <h4 class="font-bold text-gray-900 flex justify-between items-center text-sm">
                     Do I need to arrange any equipment for the home session?
-                    <i class="fas fa-plus text-brand-500 text-xs"></i>
+                    <i class="fas fa-plus text-brand-500 text-xs transition-transform duration-300"></i>
                 </h4>
-                <p class="text-gray-600 text-sm mt-3 leading-relaxed">No, you don't need to arrange anything. Our physiotherapists carry all necessary portable equipment, including TENS machines, ultrasound units, and resistance bands, directly to your home.</p>
+                <p class="faq-answer text-gray-600 text-sm mt-3 leading-relaxed hidden">No, you don't need to arrange anything. Our physiotherapists carry all necessary portable equipment, including TENS machines, ultrasound units, and resistance bands, directly to your home.</p>
             </div>
             
             <!-- FAQ 2 -->
-            <div class="border border-gray-200 rounded-lg p-5 hover:border-brand-500 transition cursor-pointer">
+            <div class="faq-item border border-gray-200 rounded-lg p-5 hover:border-brand-500 transition cursor-pointer" onclick="toggleFaq(this)">
                 <h4 class="font-bold text-gray-900 flex justify-between items-center text-sm">
                     Are your physiotherapists qualified and verified?
-                    <i class="fas fa-plus text-brand-500 text-xs"></i>
+                    <i class="fas fa-plus text-brand-500 text-xs transition-transform duration-300"></i>
                 </h4>
-                <p class="text-gray-600 text-sm mt-3 leading-relaxed">Absolutely. Every therapist on our platform holds a valid BPT or MPT degree. We also conduct strict background checks and ensure they have clinical experience before assigning them to home visits.</p>
+                <p class="faq-answer text-gray-600 text-sm mt-3 leading-relaxed hidden">Absolutely. Every therapist on our platform holds a valid BPT or MPT degree. We also conduct strict background checks and ensure they have clinical experience before assigning them to home visits.</p>
             </div>
             
             <!-- FAQ 3 -->
-            <div class="border border-gray-200 rounded-lg p-5 hover:border-brand-500 transition cursor-pointer">
+            <div class="faq-item border border-gray-200 rounded-lg p-5 hover:border-brand-500 transition cursor-pointer" onclick="toggleFaq(this)">
                 <h4 class="font-bold text-gray-900 flex justify-between items-center text-sm">
                     How long does a home physiotherapy session last?
-                    <i class="fas fa-plus text-brand-500 text-xs"></i>
+                    <i class="fas fa-plus text-brand-500 text-xs transition-transform duration-300"></i>
                 </h4>
-                <p class="text-gray-600 text-sm mt-3 leading-relaxed">A standard home session typically lasts between 45 to 60 minutes. The first session usually involves a detailed physical assessment and consultation, followed by the initial treatment.</p>
+                <p class="faq-answer text-gray-600 text-sm mt-3 leading-relaxed hidden">A standard home session typically lasts between 45 to 60 minutes. The first session usually involves a detailed physical assessment and consultation, followed by the initial treatment.</p>
             </div>
         </div>
     </div>
@@ -348,7 +348,7 @@
 </style>
 
 <!-- Section 2: How It Works -->
-<section class="py-16 md:py-24 bg-white relative overflow-hidden">
+<section class="py-10 md:py-16 bg-white relative overflow-hidden">
     <div class="absolute top-0 left-0 w-full h-1/2 bg-gray-50/50 -skew-y-2 origin-top-left -z-10"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-16">
@@ -405,7 +405,7 @@
 </section>
 
 <!-- Section 3: Conditions We Treat -->
-<section class="py-16 md:py-24 bg-white relative">
+<section class="py-10 md:py-16 bg-white relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3 tracking-tight">Conditions We Treat</h2>
@@ -514,7 +514,7 @@
 </section>
 
 <!-- Section 4: What Our Patients Say -->
-<section class="py-16 md:py-24 bg-brand-900 relative overflow-hidden">
+<section class="py-10 md:py-16 bg-brand-900 relative overflow-hidden">
     <!-- Decorative pattern -->
     <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 2px, transparent 2px); background-size: 30px 30px;"></div>
     
@@ -582,5 +582,51 @@
         </div>
     </div>
 </section>
+
+<script>
+    // --- FAQ Toggle Logic ---
+    function toggleFaq(element) {
+        const answer = element.querySelector('.faq-answer');
+        const icon = element.querySelector('.fa-plus') || element.querySelector('.fa-minus');
+        
+        if (answer.classList.contains('hidden')) {
+            // Open
+            answer.classList.remove('hidden');
+            element.classList.add('border-brand-500', 'bg-brand-50');
+            if (icon) {
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus', 'rotate-180');
+            }
+        } else {
+            // Close
+            answer.classList.add('hidden');
+            element.classList.remove('border-brand-500', 'bg-brand-50');
+            if (icon) {
+                icon.classList.remove('fa-minus', 'rotate-180');
+                icon.classList.add('fa-plus');
+            }
+        }
+    }
+
+    // --- WhatsApp Submit Logic ---
+    function submitToWhatsApp() {
+        const name = document.getElementById('wa-name').value;
+        const phone = document.getElementById('wa-phone').value;
+        const address = document.getElementById('wa-address').value;
+        const issue = document.getElementById('wa-issue').value;
+
+        if (!name || !phone) {
+            alert('Please enter your Name and Mobile Number.');
+            return;
+        }
+
+        let msg = `Hi Relieve Physiotherapy, I would like to book a home session.\n\n*Name:* ${name}\n*Mobile:* +91 ${phone}`;
+        if (address) msg += `\n*Address:* ${address}`;
+        if (issue) msg += `\n*Issue:* ${issue}`;
+
+        const whatsappUrl = `https://wa.me/917987397821?text=${encodeURIComponent(msg)}`;
+        window.open(whatsappUrl, '_blank');
+    }
+</script>
 
 <?php include 'includes/footer.php'; ?>

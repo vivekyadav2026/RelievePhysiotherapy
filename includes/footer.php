@@ -109,7 +109,7 @@
         </a>
         
         <!-- WhatsApp Button -->
-        <a href="https://wa.me/917987397821?text=Hi%20Physiowala,%20I%20would%20like%20to%20book%20a%20home%20physiotherapy%20session." target="_blank" class="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-[#20bd5a] hover:-translate-y-1 transition-all duration-300 relative group border-2 border-white">
+        <a href="https://wa.me/917987397821?text=Hi%20Relieve%20Physiotherapy,%20I%20would%20like%20to%20book%20a%20home%20session." target="_blank" class="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-[#20bd5a] hover:-translate-y-1 transition-all duration-300 relative group border-2 border-white">
             <i class="fab fa-whatsapp text-3xl"></i>
             <span class="absolute right-16 bg-gray-900 text-white text-xs font-bold px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap shadow-lg pointer-events-none">WhatsApp Us</span>
         </a>

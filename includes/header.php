@@ -1,3 +1,8 @@
+<?php
+header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
+header("Pragma: no-cache"); // HTTP 1.0.
+header("Expires: 0"); // Proxies.
+?>
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -59,8 +64,8 @@
                 <!-- Logo -->
                 <div class="flex items-center">
                     <a href="index.php" class="flex items-center gap-3">
-                        <img src="images/logo.jpg" alt="Relieve Physiotherapy" class="h-12 w-auto rounded">
-                        <span class="text-brand-700 font-bold text-lg hidden sm:block tracking-wide">Relieve Physiotherapy</span>
+                        <img src="images/logo.jpg" alt="Relieve Physiotherapy" class="h-10 md:h-12 w-auto rounded">
+                        <span class="text-brand-700 font-bold text-sm md:text-lg tracking-wide leading-tight">Relieve<br class="md:hidden">Physiotherapy</span>
                     </a>
                 </div>
 
