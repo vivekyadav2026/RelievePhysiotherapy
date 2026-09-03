@@ -7,16 +7,16 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <!-- Top Stats Badges -->
         <div class="flex flex-wrap gap-3 mb-5">
-            <div class="bg-white/95 backdrop-blur px-4 py-2 rounded-full flex items-center font-bold text-gray-800 text-sm shadow-sm border border-white/50">
+            <div class="bg-white/95 backdrop-blur px-4 py-2 rounded-md flex items-center font-bold text-gray-800 text-sm shadow-sm border border-white/50">
                 Home Visits <span class="ml-1 text-lg">🥇</span>
             </div>
-            <div class="bg-white/95 backdrop-blur px-4 py-2 rounded-full flex items-center font-bold text-gray-800 text-sm shadow-sm border border-white/50">
+            <div class="bg-white/95 backdrop-blur px-4 py-2 rounded-md flex items-center font-bold text-gray-800 text-sm shadow-sm border border-white/50">
                 Certified 40+ Therapists <span class="ml-1 text-lg">⭐</span>
             </div>
-            <div class="bg-white/95 backdrop-blur px-4 py-2 rounded-full flex items-center font-bold text-gray-800 text-sm shadow-sm border border-white/50">
+            <div class="bg-white/95 backdrop-blur px-4 py-2 rounded-md flex items-center font-bold text-gray-800 text-sm shadow-sm border border-white/50">
                 3000+ Patients <span class="ml-1 text-lg">❤️</span>
             </div>
-            <div class="bg-brand-500 backdrop-blur px-4 py-2 rounded-full flex items-center font-bold text-white text-sm shadow-sm border border-brand-400">
+            <div class="bg-brand-500 backdrop-blur px-4 py-2 rounded-md flex items-center font-bold text-white text-sm shadow-sm border border-brand-400">
                 <i class="fas fa-phone-alt mr-2"></i> +91 7987397821
             </div>
         </div>
@@ -48,8 +48,8 @@
                     <div class="relative z-10 text-white w-full">
                         <!-- Navigation Arrows -->
                         <div class="flex justify-between items-center w-full absolute top-1/2 -translate-y-1/2 -mt-10 left-0 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button onclick="prevSlide()" class="w-8 h-8 rounded-full bg-white/20 backdrop-blur flex items-center justify-center hover:bg-white/40 transition"><i class="fas fa-chevron-left text-sm"></i></button>
-                            <button onclick="nextSlide()" class="w-8 h-8 rounded-full bg-white/20 backdrop-blur flex items-center justify-center hover:bg-white/40 transition"><i class="fas fa-chevron-right text-sm"></i></button>
+                            <button onclick="prevSlide()" class="w-8 h-8 rounded-none bg-white/20 backdrop-blur flex items-center justify-center hover:bg-white/40 transition"><i class="fas fa-chevron-left text-sm"></i></button>
+                            <button onclick="nextSlide()" class="w-8 h-8 rounded-none bg-white/20 backdrop-blur flex items-center justify-center hover:bg-white/40 transition"><i class="fas fa-chevron-right text-sm"></i></button>
                         </div>
                         
                         <!-- Slide Content Container -->
@@ -134,7 +134,7 @@
                             </select>
                         </div>
 
-                        <button type="button" onclick="submitToWhatsApp()" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-2.5 px-4 rounded transition flex items-center justify-center gap-2 mt-2 shadow-sm">
+                        <button type="button" onclick="submitToWhatsApp()" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-2.5 px-4 rounded-none transition flex items-center justify-center gap-2 mt-2 shadow-sm">
                             Enquire/Book Now <i class="fas fa-arrow-right text-[10px]"></i>
                         </button>
                         
