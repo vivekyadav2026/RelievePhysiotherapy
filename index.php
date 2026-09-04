@@ -119,7 +119,6 @@
                     <div class="flex justify-between items-center mb-5 border-b border-gray-100 pb-3">
                         <div>
                             <h3 class="font-bold text-gray-900 text-base">Home Session @ <span class="text-lg text-brand-600">₹1000</span> <span class="text-[11px] text-gray-400 line-through">₹1500</span></h3>
-                            <p class="text-[10px] text-brand-600 font-bold uppercase tracking-wide">1st Session (₹1000)</p>
                         </div>
                         <div class="bg-blue-50 px-2 py-1.5 rounded flex items-center justify-center border border-blue-100">
                             <span class="text-blue-600 font-bold text-xs flex flex-col items-center leading-tight">
