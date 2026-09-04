@@ -400,11 +400,11 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 relative">
             <!-- Connecting Line (Desktop only) -->
-            <div class="hidden lg:block absolute top-10 left-[12%] right-[12%] h-[2px] bg-gradient-to-r from-brand-200 via-brand-400 to-brand-200 border-t-2 border-dashed border-transparent" style="background-clip: padding-box; border-image: repeating-linear-gradient(to right, transparent, transparent 5px, #22c55e 5px, #22c55e 10px) 1; z-index: -1;"></div>
+            <div class="hidden lg:block absolute top-10 left-[12%] right-[12%] h-[2px] bg-gradient-to-r from-brand-200 via-brand-400 to-brand-200 border-t-2 border-dashed border-transparent" style="background-clip: padding-box; border-image: repeating-linear-gradient(to right, transparent, transparent 5px, #0284c7 5px, #0284c7 10px) 1; z-index: -1;"></div>
 
             <!-- Step 1 -->
             <div class="text-center relative group">
-                <div class="w-20 h-20 mx-auto bg-white border border-gray-100 text-brand-600 rounded-2xl flex items-center justify-center text-3xl mb-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.08)] group-hover:-translate-y-2 group-hover:shadow-[0_12px_40px_rgb(34,197,94,0.15)] transition-all duration-300 transform rotate-3 group-hover:rotate-0">
+                <div class="w-20 h-20 mx-auto bg-white border border-gray-100 text-brand-600 rounded-2xl flex items-center justify-center text-3xl mb-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.08)] group-hover:-translate-y-2 group-hover:shadow-[0_12px_40px_rgba(2,132,199,0.25)] transition-all duration-300 transform rotate-3 group-hover:rotate-0">
                     <i class="far fa-calendar-alt"></i>
                     <div class="absolute -top-3 -right-3 bg-brand-600 text-white text-[11px] font-extrabold w-7 h-7 rounded-full flex items-center justify-center border-[3px] border-white shadow-sm">01</div>
                 </div>
@@ -414,7 +414,7 @@
 
             <!-- Step 2 -->
             <div class="text-center relative group">
-                <div class="w-20 h-20 mx-auto bg-white border border-gray-100 text-brand-600 rounded-2xl flex items-center justify-center text-3xl mb-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.08)] group-hover:-translate-y-2 group-hover:shadow-[0_12px_40px_rgb(34,197,94,0.15)] transition-all duration-300 transform -rotate-3 group-hover:rotate-0">
+                <div class="w-20 h-20 mx-auto bg-white border border-gray-100 text-brand-600 rounded-2xl flex items-center justify-center text-3xl mb-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.08)] group-hover:-translate-y-2 group-hover:shadow-[0_12px_40px_rgba(2,132,199,0.25)] transition-all duration-300 transform -rotate-3 group-hover:rotate-0">
                     <i class="far fa-file-alt"></i>
                     <div class="absolute -top-3 -right-3 bg-brand-600 text-white text-[11px] font-extrabold w-7 h-7 rounded-full flex items-center justify-center border-[3px] border-white shadow-sm">02</div>
                 </div>
@@ -424,7 +424,7 @@
 
             <!-- Step 3 -->
             <div class="text-center relative group">
-                <div class="w-20 h-20 mx-auto bg-white border border-gray-100 text-brand-600 rounded-2xl flex items-center justify-center text-3xl mb-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.08)] group-hover:-translate-y-2 group-hover:shadow-[0_12px_40px_rgb(34,197,94,0.15)] transition-all duration-300 transform rotate-3 group-hover:rotate-0">
+                <div class="w-20 h-20 mx-auto bg-white border border-gray-100 text-brand-600 rounded-2xl flex items-center justify-center text-3xl mb-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.08)] group-hover:-translate-y-2 group-hover:shadow-[0_12px_40px_rgba(2,132,199,0.25)] transition-all duration-300 transform rotate-3 group-hover:rotate-0">
                     <i class="fas fa-notes-medical"></i>
                     <div class="absolute -top-3 -right-3 bg-brand-600 text-white text-[11px] font-extrabold w-7 h-7 rounded-full flex items-center justify-center border-[3px] border-white shadow-sm">03</div>
                 </div>
@@ -434,7 +434,7 @@
 
             <!-- Step 4 -->
             <div class="text-center relative group">
-                <div class="w-20 h-20 mx-auto bg-white border border-gray-100 text-brand-600 rounded-2xl flex items-center justify-center text-3xl mb-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.08)] group-hover:-translate-y-2 group-hover:shadow-[0_12px_40px_rgb(34,197,94,0.15)] transition-all duration-300 transform -rotate-3 group-hover:rotate-0">
+                <div class="w-20 h-20 mx-auto bg-white border border-gray-100 text-brand-600 rounded-2xl flex items-center justify-center text-3xl mb-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.08)] group-hover:-translate-y-2 group-hover:shadow-[0_12px_40px_rgba(2,132,199,0.25)] transition-all duration-300 transform -rotate-3 group-hover:rotate-0">
                     <i class="fas fa-sync-alt"></i>
                     <div class="absolute -top-3 -right-3 bg-brand-600 text-white text-[11px] font-extrabold w-7 h-7 rounded-full flex items-center justify-center border-[3px] border-white shadow-sm">04</div>
                 </div>
@@ -791,12 +791,36 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         let msg = `Hi Relieve Physiotherapy, I would like to book a home session.\n\n*Name:* ${name}\n*Mobile:* +91 ${phone}`;
-        if (address) msg += `\n*Address:* ${address}`;
-        if (issue) msg += `\n*Issue:* ${issue}`;
-
         const whatsappUrl = `https://wa.me/917987397821?text=${encodeURIComponent(msg)}`;
         window.open(whatsappUrl, '_blank');
     }
 </script>
+
+<!-- CTA Call-to-Action Section -->
+<section class="py-16 md:py-20 bg-gradient-to-r from-brand-900 via-brand-800 to-brand-900 text-white relative overflow-hidden border-t border-brand-700/50">
+    <!-- Background Glow Elements -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <span class="text-brand-300 font-bold uppercase tracking-wider text-xs bg-white/10 px-4 py-1.5 rounded-full border border-white/20 inline-block mb-4">
+            <i class="fas fa-home mr-1.5"></i> Doorstep Healthcare in Gurgaon
+        </span>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4 tracking-tight leading-tight">
+            Ready to Experience Pain-Free Living at Home?
+        </h2>
+        <p class="text-brand-100 text-base md:text-lg max-w-2xl mx-auto mb-8 font-medium leading-relaxed">
+            Book your 1-on-1 home physiotherapy session with certified specialists in Gurgaon. Zero commuting, no waiting rooms, 100% focused care.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="contact.php" class="w-full sm:w-auto bg-brand-500 hover:bg-brand-400 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2 border border-brand-400/40 text-base">
+                Book Home Visit @ ₹699 <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="tel:7987397821" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-xl border border-white/20 backdrop-blur-md transition-all duration-300 flex items-center justify-center gap-2 text-base">
+                <i class="fas fa-phone-alt text-brand-300"></i> Call: +91 7987397821
+            </a>
+        </div>
+    </div>
+</section>
 
 <?php include 'includes/footer.php'; ?>

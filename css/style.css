@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-    /* Royal Emerald & Gold Theme Palette */
-    --primary: #046A38;       /* Deep Royal Emerald Green */
-    --secondary: #00A859;     /* Vibrant Emerald Green */
-    --accent: #F59E0B;        /* Warm Gold / Saffron Amber */
-    --accent-hover: #D97706;  /* Deep Gold */
-    --dark: #0B1E14;          /* Deep Royal Dark */
-    --light: #E3F2FD;         /* Light Skyblue */
+    /* Royal Medical Blue & Cyan Theme Palette */
+    --primary: #0284c7;       /* Royal Clinical Blue */
+    --secondary: #0ea5e9;     /* Vibrant Sky Blue */
+    --accent: #06b6d4;        /* Cyan Accent */
+    --accent-hover: #0891b2;  /* Deep Cyan */
+    --dark: #071e33;          /* Midnight Royal Navy */
+    --light: #F0F9FF;         /* Soft Light Blue */
     --text: #1E293B;          /* Slate Dark Text */
     --muted: #64748B;
     --white: #FFFFFF;
     
     /* Muted Tints for Depth */
-    --primary-tint: rgba(4, 106, 56, 0.05);
-    --primary-light: rgba(4, 106, 56, 0.12);
-    --accent-tint: rgba(245, 158, 11, 0.1);
-    --border: rgba(11, 30, 20, 0.08);
+    --primary-tint: rgba(2, 132, 199, 0.05);
+    --primary-light: rgba(2, 132, 199, 0.12);
+    --accent-tint: rgba(6, 182, 212, 0.1);
+    --border: rgba(7, 30, 51, 0.08);
 
     /* Typography */
     --font-heading: 'Outfit', sans-serif;
@@ -2015,7 +2015,7 @@ html, body {
     color: var(--white);
 }
 
-.icon-bg-green { background: linear-gradient(135deg, #046A38 0%, #00A859 100%); }
+.icon-bg-green { background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); }
 .icon-bg-orange { background: linear-gradient(135deg, #E65100 0%, #F26522 100%); }
 .icon-bg-blue { background: linear-gradient(135deg, #0369A1 0%, #38BDF8 100%); }
 .icon-bg-teal { background: linear-gradient(135deg, #0F766E 0%, #14B8A6 100%); }
@@ -2220,11 +2220,11 @@ html, body {
     box-shadow: 0 6px 14px rgba(11, 30, 20, 0.08);
 }
 .contact-info-icon.icon-emerald {
-    background-color: #046A38 !important;
+    background-color: #0284c7 !important;
     color: #FFFFFF !important;
 }
 .contact-info-icon.icon-green {
-    background-color: #00A859 !important;
+    background-color: #0369a1 !important;
     color: #FFFFFF !important;
 }
 .contact-info-icon.icon-gold {

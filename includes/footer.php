@@ -94,7 +94,10 @@
                     <a href="#" class="hover:text-white transition">Cancellation Policy</a>
                 </div>
 
-                <p>&copy; <?php echo date("Y"); ?> Relieve Physiotherapy. All rights reserved. Licensed Healthcare Provider.</p>
+                <div class="text-center md:text-right space-y-1">
+                    <p>&copy; <?php echo date("Y"); ?> Relieve Physiotherapy. All rights reserved.</p>
+                    <p class="text-[11px] text-gray-400">Designed & Developed by <a href="https://foundida.com/" target="_blank" rel="noopener noreferrer" class="text-brand-400 hover:text-white font-semibold transition underline decoration-brand-500/40 underline-offset-2">Foundida</a></p>
+                </div>
             </div>
         </div>
     </footer>
