@@ -39,27 +39,27 @@
             <!-- Right Side (Grid of Values) -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition">
-                    <i class="fas fa-hand-holding-heart text-3xl text-brand-500 mb-4"></i>
-                    <h4 class="font-bold text-gray-900 mb-2">Personalized Care</h4>
-                    <p class="text-sm text-gray-600">One-on-one sessions tailored specifically to your condition and goals.</p>
+                    <i class="fas fa-user-md text-3xl text-brand-500 mb-4"></i>
+                    <h4 class="font-bold text-gray-900 mb-2">Qualified & Experienced Therapists</h4>
+                    <p class="text-sm text-gray-600">Every session is led by licensed physiotherapists with hands-on clinical experience across orthopedic, neurological, and sports rehabilitation.</p>
                 </div>
                 
                 <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition mt-0 sm:mt-8">
-                    <i class="fas fa-home text-3xl text-brand-500 mb-4"></i>
-                    <h4 class="font-bold text-gray-900 mb-2">Ultimate Convenience</h4>
-                    <p class="text-sm text-gray-600">All required equipment is brought to you. No commuting required.</p>
+                    <i class="fas fa-hand-holding-heart text-3xl text-brand-500 mb-4"></i>
+                    <h4 class="font-bold text-gray-900 mb-2">Truly Personalized Care</h4>
+                    <p class="text-sm text-gray-600">One-on-one, full-attention sessions tailored to your condition, pace, and goals — not a shared clinic slot.</p>
                 </div>
                 
                 <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition">
-                    <i class="fas fa-chart-line text-3xl text-brand-500 mb-4"></i>
-                    <h4 class="font-bold text-gray-900 mb-2">Consistent Recovery</h4>
-                    <p class="text-sm text-gray-600">Treatment in your natural environment helps build sustainable routines.</p>
+                    <i class="fas fa-shield-alt text-3xl text-brand-500 mb-4"></i>
+                    <h4 class="font-bold text-gray-900 mb-2">Convenience Without Compromise</h4>
+                    <p class="text-sm text-gray-600">All required equipment is brought to you. No commuting, no waiting, no exposure to crowded clinics.</p>
                 </div>
                 
                 <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition mt-0 sm:mt-8">
-                    <i class="fas fa-shield-alt text-3xl text-brand-500 mb-4"></i>
-                    <h4 class="font-bold text-gray-900 mb-2">Safe & Secure</h4>
-                    <p class="text-sm text-gray-600">Strict hygiene protocols and background-verified therapists for your peace of mind.</p>
+                    <i class="fas fa-heart-pulse text-3xl text-brand-500 mb-4"></i>
+                    <h4 class="font-bold text-gray-900 mb-2">Faster, More Consistent Recovery</h4>
+                    <p class="text-sm text-gray-600">Treatment in your natural home environment helps build routines that stick, improving long-term outcomes.</p>
                 </div>
             </div>
 

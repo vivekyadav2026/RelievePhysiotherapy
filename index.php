@@ -24,14 +24,20 @@
         <div class="flex flex-col lg:flex-row gap-6">
             <!-- Left Column: Info & Slider -->
             <div class="lg:w-[60%] space-y-4">
-                <!-- Info Box -->
-                <div class="glass-card p-5 rounded-xl shadow-md border border-white/20">
-                    <div class="flex justify-between items-start mb-1.5">
-                        <h1 class="text-lg font-bold text-gray-900">How Home Physiotherapy Works</h1>
-                        <a href="about.php" class="text-brand-600 font-semibold text-xs hover:underline flex items-center">Learn More <i class="fas fa-chevron-right ml-1 text-[10px]"></i></a>
+                <!-- Banner Hero Box -->
+                <div class="glass-card p-6 md:p-7 rounded-2xl shadow-xl border border-white/30 backdrop-blur-md">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-xs font-bold mb-3 uppercase tracking-wider">
+                        <i class="fas fa-heartbeat text-brand-600"></i> Relieve Physiotherapy
                     </div>
-                    <p class="text-[13px] text-gray-700 leading-relaxed">
-                        Home physiotherapy is <span class="font-bold text-brand-600">equally effective</span> to clinic sessions and saves you time. Get personalized care in the comfort of your home. Best for <span class="font-medium text-gray-900 border-b border-brand-500 pb-0.5">ACL Tear, Back Pain, Chiropractic Care, Cervical, Knee Pain, Neurological Care, Post-Surgery, Shoulder Pain, Spondylitis Care.</span>
+                    <h1 class="text-2xl md:text-3xl font-extrabold text-gray-900 tracking-tight leading-snug mb-2">
+                        Expert Physiotherapy Care, Delivered to Your Doorstep in Gurgaon
+                    </h1>
+                    <div class="w-12 h-1 bg-brand-500 rounded-full mb-4"></div>
+                    <h2 class="text-base md:text-lg font-bold text-brand-700 mb-2">
+                        Pain-Free Living Starts at Home
+                    </h2>
+                    <p class="text-xs md:text-sm text-gray-700 leading-relaxed font-medium">
+                        Relieve Physiotherapy brings expert, personalized physiotherapy care directly to your doorstep in Gurgaon. No traffic, no waiting rooms — just skilled therapists focused entirely on your recovery, in the comfort and privacy of your own home.
                     </p>
                 </div>
 
@@ -70,12 +76,38 @@
 
                 <!-- Why Choose Us Box -->
                 <div class="glass-card p-5 rounded-xl shadow-md border border-white/20">
-                    <h3 class="text-center font-bold text-gray-900 mb-3 text-[15px]">Why Choose Relieve Physiotherapy?</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-4 text-[13px] text-gray-700 font-medium">
-                        <div class="flex items-start gap-2"><i class="fas fa-check text-brand-600 mt-0.5"></i> High Standard personalized care at home</div>
-                        <div class="flex items-start gap-2"><i class="fas fa-check text-brand-600 mt-0.5"></i> Certified 50+ BPT/MPT Qualified Therapists</div>
-                        <div class="flex items-start gap-2"><i class="fas fa-check text-brand-600 mt-0.5"></i> All Therapy equipment carried with Therapists</div>
-                        <div class="flex items-start gap-2"><i class="fas fa-check text-brand-600 mt-0.5"></i> Specialist in Stroke / Paralysis, ACL, Post-surgery & Paralysis</div>
+                    <h3 class="text-center md:text-left font-extrabold text-gray-900 mb-3 text-[15px] flex items-center gap-2">
+                        <i class="fas fa-award text-brand-600"></i> Why Choose Relieve Physiotherapy?
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-[13px] text-gray-700">
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-user-md text-brand-600 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <strong class="text-gray-900 font-bold block">Qualified & Experienced Therapists</strong>
+                                <span class="text-xs text-gray-600 leading-snug block">Every session is led by licensed physiotherapists with hands-on clinical experience across orthopedic, neurological, and sports rehabilitation.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-hand-holding-heart text-brand-600 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <strong class="text-gray-900 font-bold block">Truly Personalized Care</strong>
+                                <span class="text-xs text-gray-600 leading-snug block">One-on-one, full-attention sessions tailored to your condition, pace, and goals — not a shared clinic slot.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-shield-alt text-brand-600 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <strong class="text-gray-900 font-bold block">Convenience Without Compromise</strong>
+                                <span class="text-xs text-gray-600 leading-snug block">All required equipment is brought to you. No commuting, no waiting, no exposure to crowded clinics.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-heart-pulse text-brand-600 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <strong class="text-gray-900 font-bold block">Faster, More Consistent Recovery</strong>
+                                <span class="text-xs text-gray-600 leading-snug block">Treatment in your natural home environment helps build routines that stick, improving long-term outcomes.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,50 +182,59 @@
     </div>
 </section>
 
-<!-- Section 5: Why Home Physiotherapy? -->
-<section class="py-10 md:py-16 bg-gray-50 border-t border-gray-100">
+<!-- Section 5: Why Choose Relieve Physiotherapy? -->
+<section class="py-12 md:py-20 bg-gray-50 border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-3 tracking-tight">Why Choose Home Physiotherapy?</h2>
-            <div class="w-16 h-1 bg-brand-500 mx-auto rounded-full mb-4"></div>
-            <p class="text-gray-500 text-sm md:text-base font-medium">Experience faster recovery with professional care delivered directly to your doorstep.</p>
+        <div class="text-center mb-14">
+            <span class="text-brand-600 font-bold uppercase tracking-wider text-xs bg-brand-50 px-3 py-1 rounded-full border border-brand-100 inline-block mb-3">Our Core Promise</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">Why Choose Relieve Physiotherapy?</h2>
+            <div class="w-16 h-1 bg-brand-500 mx-auto rounded-full mt-3 mb-4"></div>
+            <p class="text-gray-600 text-sm md:text-base font-medium max-w-2xl mx-auto">Experience superior healthcare delivered right to your home in Gurgaon with dedicated 1-on-1 focus.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Benefit 1 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-5 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-                    <i class="fas fa-car-side text-2xl"></i>
+            <div class="bg-white p-7 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-brand-50 text-brand-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300 shadow-sm">
+                        <i class="fas fa-user-md text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-3 text-lg leading-snug">Qualified & Experienced Therapists</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed font-medium">Every session is led by licensed physiotherapists with hands-on clinical experience across orthopedic, neurological, and sports rehabilitation.</p>
                 </div>
-                <h4 class="font-bold text-gray-900 mb-2 text-lg">Zero Travel Time</h4>
-                <p class="text-sm text-gray-600 leading-relaxed">Skip the traffic and waiting rooms. We bring the clinic to you, saving you valuable time and physical strain.</p>
             </div>
             
             <!-- Benefit 2 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-14 h-14 bg-brand-50 text-brand-600 rounded-full flex items-center justify-center mb-5 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
-                    <i class="fas fa-home text-2xl"></i>
+            <div class="bg-white p-7 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shadow-sm">
+                        <i class="fas fa-hand-holding-heart text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-3 text-lg leading-snug">Truly Personalized Care</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed font-medium">One-on-one, full-attention sessions tailored to your condition, pace, and goals — not a shared clinic slot.</p>
                 </div>
-                <h4 class="font-bold text-gray-900 mb-2 text-lg">Heal in Comfort</h4>
-                <p class="text-sm text-gray-600 leading-relaxed">Recovering in a familiar environment reduces stress and allows you to practice exercises exactly where you live.</p>
             </div>
             
             <!-- Benefit 3 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center mb-5 group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300">
-                    <i class="fas fa-user-md text-2xl"></i>
+            <div class="bg-white p-7 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 shadow-sm">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-3 text-lg leading-snug">Convenience Without Compromise</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed font-medium">All required equipment is brought to you. No commuting, no waiting, no exposure to crowded clinics.</p>
                 </div>
-                <h4 class="font-bold text-gray-900 mb-2 text-lg">1-on-1 Undivided Care</h4>
-                <p class="text-sm text-gray-600 leading-relaxed">Unlike crowded clinics, our therapist is 100% focused solely on your recovery for the entire duration of the session.</p>
             </div>
             
             <!-- Benefit 4 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-14 h-14 bg-orange-50 text-orange-600 rounded-full flex items-center justify-center mb-5 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
-                    <i class="fas fa-users text-2xl"></i>
+            <div class="bg-white p-7 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300 shadow-sm">
+                        <i class="fas fa-heart-pulse text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-3 text-lg leading-snug">Faster, More Consistent Recovery</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed font-medium">Treatment in your natural home environment helps build routines that stick, improving long-term outcomes.</p>
                 </div>
-                <h4 class="font-bold text-gray-900 mb-2 text-lg">Family Involvement</h4>
-                <p class="text-sm text-gray-600 leading-relaxed">Your family members can learn how to safely assist you with daily movements and track your healing progress.</p>
             </div>
         </div>
     </div>
@@ -513,75 +554,204 @@
     </div>
 </section>
 
-<!-- Section 4: What Our Patients Say -->
-<section class="py-10 md:py-16 bg-brand-900 relative overflow-hidden">
+<!-- Section 4: What Our Patients Say (Slider) -->
+<section class="py-12 md:py-20 bg-brand-900 relative overflow-hidden">
     <!-- Decorative pattern -->
     <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 2px, transparent 2px); background-size: 30px 30px;"></div>
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-3 tracking-tight">What Our Patients Say</h2>
-            <div class="w-16 h-1 bg-brand-500 mx-auto rounded-full mb-4"></div>
-            <p class="text-brand-100 text-sm md:text-base font-medium max-w-2xl mx-auto">Real stories from people who've experienced the benefits of our home physiotherapy services.</p>
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div class="text-left">
+                <span class="text-brand-400 font-bold uppercase tracking-wider text-xs bg-brand-800/80 px-3 py-1 rounded-full border border-brand-700/50 inline-block mb-3">Verified Patient Reviews</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight">What Our Patients Say</h2>
+                <p class="text-brand-100 text-sm md:text-base font-medium mt-2 max-w-xl">Real recovery stories from patients across Gurgaon who experienced expert physiotherapy right at home.</p>
+            </div>
+            
+            <!-- Custom Slider Controls -->
+            <div class="flex items-center gap-3">
+                <button id="review-prev" class="w-12 h-12 rounded-full bg-white/10 hover:bg-brand-500 text-white border border-white/20 flex items-center justify-center transition-all duration-300 shadow-lg focus:outline-none cursor-pointer">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button id="review-next" class="w-12 h-12 rounded-full bg-white/10 hover:bg-brand-500 text-white border border-white/20 flex items-center justify-center transition-all duration-300 shadow-lg focus:outline-none cursor-pointer">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Review 1 -->
-            <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl relative hover:-translate-y-2 transition-transform duration-300">
-                <i class="fas fa-quote-left text-4xl text-brand-500/50 absolute top-6 right-6"></i>
-                <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                <p class="text-brand-50 italic leading-relaxed mb-6 font-medium">
-                    "The in-home physiotherapy sessions were completely effective. I received expert professional care from home during my recovery from back surgery. The personalized attention made all the difference."
-                </p>
-                <div class="flex items-center gap-4 border-t border-white/10 pt-4">
-                    <div class="w-10 h-10 bg-brand-500 rounded-full flex items-center justify-center text-white font-bold text-lg">A</div>
-                    <div>
-                        <h4 class="font-bold text-white">Aman Yadav</h4>
-                        <p class="text-[11px] text-brand-200">Noida, Uttar Pradesh</p>
+        <!-- Swiper Slider -->
+        <div class="swiper reviews-swiper !pb-12">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide h-auto">
+                    <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl relative hover:-translate-y-2 transition-transform duration-300 h-full flex flex-col justify-between">
+                        <i class="fas fa-quote-left text-4xl text-brand-500/40 absolute top-6 right-6"></i>
+                        <div>
+                            <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-brand-50 italic leading-relaxed mb-6 font-medium text-sm md:text-base">
+                                "After my total knee replacement surgery, traveling to a clinic daily was painful and overwhelming. Relieve Physiotherapy provided gentle, highly effective home sessions. I was walking independently without a cane in just 3 weeks!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 border-t border-white/10 pt-4 mt-auto">
+                            <div class="w-11 h-11 bg-emerald-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-inner">R</div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Rahul Verma</h4>
+                                <p class="text-xs text-brand-200"><i class="fas fa-map-marker-alt text-brand-400 mr-1"></i>DLF Phase 4, Gurgaon</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Review 2 -->
-            <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl relative hover:-translate-y-2 transition-transform duration-300">
-                <i class="fas fa-quote-left text-4xl text-brand-500/50 absolute top-6 right-6"></i>
-                <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                <p class="text-brand-50 italic leading-relaxed mb-6 font-medium">
-                    "As an athlete, I needed specialized care for my knee injury. The home sessions with detailed movement analysis helped me get back to training faster than expected!"
-                </p>
-                <div class="flex items-center gap-4 border-t border-white/10 pt-4">
-                    <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg">M</div>
-                    <div>
-                        <h4 class="font-bold text-white">Mayank Prakash</h4>
-                        <p class="text-[11px] text-brand-200">Bhopal, Madhya Pradesh</p>
+                <!-- Slide 2 -->
+                <div class="swiper-slide h-auto">
+                    <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl relative hover:-translate-y-2 transition-transform duration-300 h-full flex flex-col justify-between">
+                        <i class="fas fa-quote-left text-4xl text-brand-500/40 absolute top-6 right-6"></i>
+                        <div>
+                            <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-brand-50 italic leading-relaxed mb-6 font-medium text-sm md:text-base">
+                                "Working 10+ hours on a laptop caused severe cervical stiffness and acute upper back pain. Their chiropractor visited my home with portable equipment and gave me instant relief. Punctual, polite, and top-class care!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 border-t border-white/10 pt-4 mt-auto">
+                            <div class="w-11 h-11 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-inner">S</div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Sneha Kapoor</h4>
+                                <p class="text-xs text-brand-200"><i class="fas fa-map-marker-alt text-brand-400 mr-1"></i>Golf Course Extension, Gurgaon</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Review 3 -->
-            <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl relative hover:-translate-y-2 transition-transform duration-300">
-                <i class="fas fa-quote-left text-4xl text-brand-500/50 absolute top-6 right-6"></i>
-                <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <!-- Slide 3 -->
+                <div class="swiper-slide h-auto">
+                    <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl relative hover:-translate-y-2 transition-transform duration-300 h-full flex flex-col justify-between">
+                        <i class="fas fa-quote-left text-4xl text-brand-500/40 absolute top-6 right-6"></i>
+                        <div>
+                            <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-brand-50 italic leading-relaxed mb-6 font-medium text-sm md:text-base">
+                                "We booked home physiotherapy for my father's post-stroke neuro rehabilitation. The therapist was exceptionally patient and skilled in gait training. Seeing my father regain his strength right at home is wonderful."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 border-t border-white/10 pt-4 mt-auto">
+                            <div class="w-11 h-11 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-inner">V</div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Vikramaditya Rao</h4>
+                                <p class="text-xs text-brand-200"><i class="fas fa-map-marker-alt text-brand-400 mr-1"></i>Sector 57, Gurgaon</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-brand-50 italic leading-relaxed mb-6 font-medium">
-                    "The convenience of having my sessions at home was invaluable during my mother's recovery. The therapists were patient, professional, and truly caring throughout the process."
-                </p>
-                <div class="flex items-center gap-4 border-t border-white/10 pt-4">
-                    <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold text-lg">P</div>
-                    <div>
-                        <h4 class="font-bold text-white">Priya Sharma</h4>
-                        <p class="text-[11px] text-brand-200">Pune, Maharashtra</p>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide h-auto">
+                    <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl relative hover:-translate-y-2 transition-transform duration-300 h-full flex flex-col justify-between">
+                        <i class="fas fa-quote-left text-4xl text-brand-500/40 absolute top-6 right-6"></i>
+                        <div>
+                            <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-brand-50 italic leading-relaxed mb-6 font-medium text-sm md:text-base">
+                                "I suffered from acute sciatica pain radiating down my left leg. The ultrasound therapy and nerve gliding exercises provided by their specialist got me completely pain-free within 10 home sessions!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 border-t border-white/10 pt-4 mt-auto">
+                            <div class="w-11 h-11 bg-rose-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-inner">M</div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Meenakshi Sundaram</h4>
+                                <p class="text-xs text-brand-200"><i class="fas fa-map-marker-alt text-brand-400 mr-1"></i>Sector 14, Gurgaon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide h-auto">
+                    <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl relative hover:-translate-y-2 transition-transform duration-300 h-full flex flex-col justify-between">
+                        <i class="fas fa-quote-left text-4xl text-brand-500/40 absolute top-6 right-6"></i>
+                        <div>
+                            <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-brand-50 italic leading-relaxed mb-6 font-medium text-sm md:text-base">
+                                "My frozen shoulder restricted my arm movement severely. Their targeted manual mobilization and therapeutic exercises restored 95% shoulder range without any painful surgery. Highly recommend!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 border-t border-white/10 pt-4 mt-auto">
+                            <div class="w-11 h-11 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-inner">A</div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Amitabh Joshi</h4>
+                                <p class="text-xs text-brand-200"><i class="fas fa-map-marker-alt text-brand-400 mr-1"></i>Sohna Road, Gurgaon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="swiper-slide h-auto">
+                    <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl relative hover:-translate-y-2 transition-transform duration-300 h-full flex flex-col justify-between">
+                        <i class="fas fa-quote-left text-4xl text-brand-500/40 absolute top-6 right-6"></i>
+                        <div>
+                            <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-brand-50 italic leading-relaxed mb-6 font-medium text-sm md:text-base">
+                                "Extremely satisfied with their kinesiology taping and rehabilitation after my sports ligament tear. The doctor was knowledgeable, courteous, and followed strict hygiene protocols during visits."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 border-t border-white/10 pt-4 mt-auto">
+                            <div class="w-11 h-11 bg-teal-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-inner">P</div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Pooja Malhotra</h4>
+                                <p class="text-xs text-brand-200"><i class="fas fa-map-marker-alt text-brand-400 mr-1"></i>Nirvana Country, Gurgaon</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Pagination Dots -->
+            <div class="swiper-pagination reviews-pagination !-bottom-1"></div>
         </div>
     </div>
 </section>
+
+<!-- Swiper Initialization Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.reviews-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        loop: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+        pagination: {
+            el: '.reviews-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '#review-next',
+            prevEl: '#review-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 24,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        }
+    });
+});
+</script>
 
 <script>
     // --- FAQ Toggle Logic ---

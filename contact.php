@@ -51,8 +51,8 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="ml-5">
-                            <h4 class="font-bold text-gray-900 mb-1">Service Areas</h4>
-                            <p class="text-gray-500 font-medium leading-relaxed">Gurgaon, Noida, Greater Noida, Indirapuram, Vaishali, Faridabad, Delhi, Ghaziabad, Bhopal, Pune</p>
+                            <h4 class="font-bold text-gray-900 mb-1">Location</h4>
+                            <p class="text-gray-500 font-medium leading-relaxed">Gurgaon</p>
                         </div>
                     </div>
                 </div>

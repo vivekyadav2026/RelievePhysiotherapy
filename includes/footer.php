@@ -34,13 +34,12 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-6">Our Services</h3>
                     <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="services.php#orthopedic" class="hover:text-brand-400 transition flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i> Orthopedic Physiotherapy</a></li>
+                        <li><a href="services.php#post-surgical" class="hover:text-brand-400 transition flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i> Post-Surgical Rehabilitation</a></li>
+                        <li><a href="services.php#neurological" class="hover:text-brand-400 transition flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i> Neurological Physiotherapy</a></li>
+                        <li><a href="services.php#sports" class="hover:text-brand-400 transition flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i> Sports Injury Rehabilitation</a></li>
                         <li><a href="chiropractic.php" class="hover:text-brand-400 transition flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i> Chiropractic Care</a></li>
                         <li><a href="kinesiology.php" class="hover:text-brand-400 transition flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i> Kinesiology Taping</a></li>
-                        <li><a href="#" class="hover:text-brand-400 transition flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i> Sports Injury Recovery</a></li>
-                        <li><a href="#" class="hover:text-brand-400 transition flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i> Post Surgery Rehabilitation</a></li>
-                        <li><a href="#" class="hover:text-brand-400 transition flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i> Chronic Pain Management</a></li>
-                        <li><a href="#" class="hover:text-brand-400 transition flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i> Neurological Rehabilitation</a></li>
-                        <li><a href="#" class="hover:text-brand-400 transition flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i> Geriatric Care</a></li>
                     </ul>
                 </div>
 
@@ -65,8 +64,8 @@
                         <li class="flex items-start gap-3">
                             <i class="fas fa-map-marker-alt text-brand-500 mt-1"></i>
                             <div>
-                                <span class="block text-white mb-1">Locations</span>
-                                <span>Gurgaon, Noida, Greater Noida, Indirapuram, Vaishali, Faridabad, Delhi, Ghaziabad, Bhopal, Pune</span>
+                                <span class="block text-white mb-1">Location</span>
+                                <span>Gurgaon</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
