@@ -64,7 +64,7 @@
                 <form action="#" method="POST" class="space-y-5">
                     <div>
                         <label class="block text-xs font-semibold text-gray-700 mb-1">Full Name <span class="text-red-500">*</span></label>
-                        <input type="text" placeholder="Enter your full name" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                        <input id="contact-name" type="text" placeholder="Enter your full name" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
                     </div>
                     <div>
                         <label class="block text-xs font-semibold text-gray-700 mb-1">Mobile Number <span class="text-red-500">*</span></label>
@@ -72,14 +72,14 @@
                             <span class="inline-flex items-center px-4 rounded-l-xl border border-r-0 border-gray-200 bg-gray-100 text-gray-500 text-sm font-medium">
                                 +91
                             </span>
-                            <input type="tel" placeholder="10 digit mobile number" class="flex-1 bg-gray-50 border border-gray-200 rounded-r-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                            <input id="contact-phone" type="tel" placeholder="10 digit mobile number" class="flex-1 bg-gray-50 border border-gray-200 rounded-r-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
                         </div>
                     </div>
                     <div>
                         <label class="block text-xs font-semibold text-gray-700 mb-1">Message / Concern</label>
-                        <textarea placeholder="Tell us about your pain or condition..." rows="4" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition resize-none"></textarea>
+                        <textarea id="contact-message" placeholder="Tell us about your pain or condition..." rows="4" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition resize-none"></textarea>
                     </div>
-                    <button type="button" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-4 px-4 rounded-xl transition shadow-lg shadow-brand-200 flex items-center justify-center gap-2">
+                    <button type="button" onclick="submitContactToWhatsApp()" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-4 px-4 rounded-xl transition shadow-lg shadow-brand-200 flex items-center justify-center gap-2">
                         Submit Request <i class="fas fa-paper-plane text-sm"></i>
                     </button>
                     <p class="text-xs text-center text-gray-400 mt-4"><i class="fas fa-lock mr-1"></i> Your information is safe and secure.</p>
@@ -89,5 +89,26 @@
         </div>
     </div>
 </section>
+
+<script>
+function submitContactToWhatsApp() {
+    const name = document.getElementById('contact-name').value.trim();
+    const phone = document.getElementById('contact-phone').value.trim();
+    const message = document.getElementById('contact-message').value.trim();
+
+    if (!name || !phone) {
+        alert('Please enter your Name and Mobile Number.');
+        return;
+    }
+
+    let msg = `Hi Relieve Physiotherapy, I have a callback request.\n\n*Name:* ${name}\n*Mobile:* +91 ${phone}`;
+    if (message) {
+        msg += `\n*Message / Concern:* ${message}`;
+    }
+
+    const whatsappUrl = `https://wa.me/917987397821?text=${encodeURIComponent(msg)}`;
+    window.open(whatsappUrl, '_blank');
+}
+</script>
 
 <?php include 'includes/footer.php'; ?>

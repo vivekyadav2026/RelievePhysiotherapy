@@ -779,9 +779,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- WhatsApp Submit Logic ---
     function submitToWhatsApp() {
-        const name = document.getElementById('wa-name').value;
-        const phone = document.getElementById('wa-phone').value;
-        const address = document.getElementById('wa-address').value;
+        const name = document.getElementById('wa-name').value.trim();
+        const phone = document.getElementById('wa-phone').value.trim();
+        const address = document.getElementById('wa-address').value.trim();
         const issue = document.getElementById('wa-issue').value;
 
         if (!name || !phone) {
@@ -790,6 +790,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         let msg = `Hi Relieve Physiotherapy, I would like to book a home session.\n\n*Name:* ${name}\n*Mobile:* +91 ${phone}`;
+        if (address) {
+            msg += `\n*Address:* ${address}`;
+        }
+        if (issue) {
+            msg += `\n*Issue:* ${issue}`;
+        }
+
         const whatsappUrl = `https://wa.me/917987397821?text=${encodeURIComponent(msg)}`;
         window.open(whatsappUrl, '_blank');
     }
