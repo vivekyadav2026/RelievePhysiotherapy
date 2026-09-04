@@ -71,7 +71,7 @@
                         </div>
                         <div class="flex justify-between items-center text-sm border-b border-gray-100 pb-2">
                             <span class="text-gray-500">First Session</span>
-                            <span class="font-bold text-brand-600">₹699</span>
+                            <span class="font-bold text-brand-600">₹1000</span>
                         </div>
                     </div>
 

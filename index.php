@@ -118,8 +118,8 @@
                     <!-- Top Ribbon -->
                     <div class="flex justify-between items-center mb-5 border-b border-gray-100 pb-3">
                         <div>
-                            <h3 class="font-bold text-gray-900 text-base">Home Session @ <span class="text-lg">₹699</span> <span class="text-[11px] text-gray-400 line-through">₹1200</span></h3>
-                            <p class="text-[10px] text-brand-600 font-bold uppercase tracking-wide">1st Session</p>
+                            <h3 class="font-bold text-gray-900 text-base">Home Session @ <span class="text-lg text-brand-600">₹1000</span> <span class="text-[11px] text-gray-400 line-through">₹1500</span></h3>
+                            <p class="text-[10px] text-brand-600 font-bold uppercase tracking-wide">1st Session (₹1000)</p>
                         </div>
                         <div class="bg-blue-50 px-2 py-1.5 rounded flex items-center justify-center border border-blue-100">
                             <span class="text-blue-600 font-bold text-xs flex flex-col items-center leading-tight">
@@ -335,22 +335,22 @@
         const data = slidesData[currentSlide];
         contentContainer.innerHTML = `
             <div class="flex items-center gap-2 mb-1.5 animate-fadeIn">
-                <i class="fas ${data.icon} text-xl text-gray-200"></i>
+                <i class="fas ${data.icon} text-xl text-brand-300" style="color: #7dd3fc !important;"></i>
                 <div>
-                    <h2 class="text-xl font-bold leading-tight">${data.title}</h2>
-                    <p class="text-[10px] text-brand-300 font-bold tracking-wide uppercase">${data.subtitle}</p>
+                    <h2 class="text-xl font-bold leading-tight text-white" style="color: #ffffff !important;">${data.title}</h2>
+                    <p class="text-[10px] text-brand-300 font-bold tracking-wide uppercase" style="color: #7dd3fc !important;">${data.subtitle}</p>
                 </div>
             </div>
             
-            <p class="text-[12px] text-gray-300 mb-3 max-w-lg line-clamp-2 leading-snug animate-fadeIn">
+            <p class="text-[12px] text-gray-200 mb-3 max-w-lg line-clamp-2 leading-snug animate-fadeIn" style="color: #f1f5f9 !important;">
                 ${data.desc}
             </p>
             
-            <div class="grid grid-cols-2 gap-x-3 gap-y-1.5 text-[11px] font-medium animate-fadeIn">
-                <div class="flex items-start gap-1.5"><i class="fas fa-check text-brand-400 mt-0.5"></i> ${data.b1}</div>
-                <div class="flex items-start gap-1.5"><i class="fas fa-check text-brand-400 mt-0.5"></i> ${data.b2}</div>
-                <div class="flex items-start gap-1.5"><i class="fas fa-check text-brand-400 mt-0.5"></i> ${data.b3}</div>
-                <div class="flex items-start gap-1.5"><i class="fas fa-check text-brand-400 mt-0.5"></i> ${data.b4}</div>
+            <div class="grid grid-cols-2 gap-x-3 gap-y-1.5 text-[11px] font-medium animate-fadeIn text-white" style="color: #ffffff !important;">
+                <div class="flex items-start gap-1.5" style="color: #ffffff !important;"><i class="fas fa-check text-brand-400 mt-0.5" style="color: #38bdf8 !important;"></i> ${data.b1}</div>
+                <div class="flex items-start gap-1.5" style="color: #ffffff !important;"><i class="fas fa-check text-brand-400 mt-0.5" style="color: #38bdf8 !important;"></i> ${data.b2}</div>
+                <div class="flex items-start gap-1.5" style="color: #ffffff !important;"><i class="fas fa-check text-brand-400 mt-0.5" style="color: #38bdf8 !important;"></i> ${data.b3}</div>
+                <div class="flex items-start gap-1.5" style="color: #ffffff !important;"><i class="fas fa-check text-brand-400 mt-0.5" style="color: #38bdf8 !important;"></i> ${data.b4}</div>
             </div>
         `;
         
@@ -814,7 +814,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="contact.php" class="w-full sm:w-auto bg-brand-500 hover:bg-brand-400 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2 border border-brand-400/40 text-base">
-                Book Home Visit @ ₹699 <i class="fas fa-arrow-right"></i>
+                Book Home Visit @ ₹1000 <i class="fas fa-arrow-right"></i>
             </a>
             <a href="tel:7987397821" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-xl border border-white/20 backdrop-blur-md transition-all duration-300 flex items-center justify-center gap-2 text-base">
                 <i class="fas fa-phone-alt text-brand-300"></i> Call: +91 7987397821

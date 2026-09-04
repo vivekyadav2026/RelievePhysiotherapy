@@ -69,6 +69,16 @@ h2 { font-size: clamp(1.9rem, 3.8vw, 2.7rem); letter-spacing: -0.02em; }
 h3 { font-size: clamp(1.4rem, 2.8vw, 1.9rem); }
 p { color: var(--text); }
 
+/* Ensure Tailwind white and light text utilities work inside cards and dark sections */
+.text-white, .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6, .text-white p {
+    color: #ffffff !important;
+}
+.text-gray-100, .text-gray-100 p { color: #f3f4f6 !important; }
+.text-gray-200, .text-gray-200 p { color: #e5e7eb !important; }
+.text-gray-300, .text-gray-300 p { color: #d1d5db !important; }
+.text-brand-300, .text-brand-300 p { color: #7dd3fc !important; }
+.text-brand-400, .text-brand-400 p { color: #38bdf8 !important; }
+
 /* Tight Section Spacing */
 .section-padding {
     padding: 22px 0 !important;

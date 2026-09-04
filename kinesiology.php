@@ -61,6 +61,17 @@
                     <p class="text-gray-600 text-sm mb-6 leading-relaxed">
                         We provide high-quality kinesiology taping integrated seamlessly into your personalized physiotherapy sessions right at your home.
                     </p>
+
+                    <div class="space-y-3 mb-8">
+                        <div class="flex justify-between items-center text-sm border-b border-gray-100 pb-2">
+                            <span class="text-gray-500">Session Duration</span>
+                            <span class="font-bold text-gray-900">45-60 Mins</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm border-b border-gray-100 pb-2">
+                            <span class="text-gray-500">First Session</span>
+                            <span class="font-bold text-brand-600">₹1000</span>
+                        </div>
+                    </div>
                     
                     <a href="contact.php" class="block w-full bg-brand-600 hover:bg-brand-700 text-white text-center font-bold py-3.5 rounded-xl transition shadow-lg shadow-brand-200">
                         Enquire / Book Now
